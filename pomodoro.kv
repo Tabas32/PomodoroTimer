@@ -1,0 +1,14 @@
+<TimerLayout>:
+	id: timer
+	display: clock
+
+	Label:
+		id: clock
+		text: timer.time
+		pos_hint: {"center_x": .5, "center_y": .5}
+
+	Button:
+		text: "Start"
+		pos_hint: {"center_x": .5, "center_y": .3}
+		size_hint: (.4, .2)
+		on_release: timer.onPress()
